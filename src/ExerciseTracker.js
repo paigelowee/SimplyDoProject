@@ -35,7 +35,7 @@ class ExerciseTracker extends React.Component {
 		  const workouts = Object.assign([], this.state.workouts);
   		workouts.push(workout);
 
-      let newcal = this.state.newcalories + this.state.totalcalories;
+      let newcal = parseFloat(this.state.newcalories) + parseFloat(this.state.totalcalories);
       this.setState({totalcalories:newcal});
 
   		this.setState({ workouts });	
@@ -52,9 +52,9 @@ class ExerciseTracker extends React.Component {
       			workouts.splice(i, 1);
     		}
   		}
-      const newcal = this.state.totalcalories - this.state.newcalories;
+      let newcal = parseFloat(this.state.totalcalories) - parseFloat(workout.cals);
       this.setState({totalcalories:newcal});
-  		//update the state
+
   		this.setState({ workouts });
 	}
 
