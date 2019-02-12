@@ -60,27 +60,25 @@ class ExerciseTracker extends React.Component {
 
   render() {
     	return (
+
         <div>
           <div class='addworkout'>
-            <label1>Workout name</label1>
-            <br/>
+            <label1>Workout name </label1>
   				  <input  value={this.state.newWorkout} onChange={this.updateNewWorkout} />
             <br/>
-            <label1>Calories burned</label1>
-            <br/>
+            <label1>Calories burned   </label1>
             <input type="number" value={this.state.newcalories} onChange={this.updatenewcalorie} />
-            <br/>
-            <br/>
+            <br/><br/>
   				  <button class='button' onClick={this.addWorkout}>Save workout</button>
   			</div>
           <div class='workouts'>
             <h3>Workouts</h3>
+            <p> Total calories burnt: {this.state.totalcalories} </p>
           <ul>
     			   {this.state.workouts.map(workout => 
   					 <Workout workout={workout} key={workout.date} deleteWorkout={this.deleteWorkout} />
     					)}
   				</ul>
-          <p> Total calories burnt: {this.state.totalcalories} </p>
           </div>
 
       	</div>

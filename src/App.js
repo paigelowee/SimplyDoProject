@@ -5,7 +5,7 @@ import ExerciseTracker from './ExerciseTracker';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div class="main">
         <h1 class= 'App'>Fitness Tracker</h1>
         <ExerciseTracker />
       </div>

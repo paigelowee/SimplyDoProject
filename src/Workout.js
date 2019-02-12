@@ -4,7 +4,7 @@ import './App.css';
 class Workout extends React.Component {
   render() {
     return (
-    	<div>
+    	<div class="NewWorkout">
 	    	<li>Workout: {this.props.workout.title}<br/>
 	    		Calories burned: {this.props.workout.cals}<br/>
 	    		Date/Time: {this.props.workout.time}<br/><br/>

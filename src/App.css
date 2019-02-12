@@ -1,8 +1,27 @@
 .App {
   text-align: center;
-  font-color:red;
-  background-color: #3BE3E0;
+  background-color: #D5BFD0;
+  width: 80%;
+  float: center;
+  margin-left: 10%;
+  border-radius: 9px;
+
 }
+body{
+  background-color: #FAF5F9;
+}
+
+.main{
+  margin-top: 0px;
+  margin-right: 7.5%;
+  float: right;
+  text-align: center;
+  width: 85%;
+  padding-top: 1.25%;
+  padding-bottom: 1.25%;
+  background-color: #FAF5F9;
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -17,19 +36,27 @@
 
 .button{
     border-radius: 8px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
 
 .button:hover {
-  background-color: teal; /* Green */
+  background-color: teal;
   color: white;
 }
-
 .addworkout{
   float: center;
 }
-
-.workouts{
+.NewWorkout{
   float: left;
+  padding-top: 40px;
+  width: 29%;
+  border-style: solid;
+  border-color: teal;
+  padding: 10px 10px 15px 10px;
+  margin-right: 4px;
+  margin-bottom: 4px
+
 }
+ul {display: inline;} 
+ul li { list-style: none;display: inline;}
